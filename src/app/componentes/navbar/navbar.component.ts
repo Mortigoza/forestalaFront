@@ -10,8 +10,6 @@ import {LogueoService} from "../../servicios/logueo.service";
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit{
-
-  logueado : boolean = false;
   usuario : Usuario;
 
   constructor(private service : UsuarioService, private router: Router, public servicio: LogueoService) {
@@ -19,6 +17,9 @@ export class NavbarComponent implements OnInit{
   }
 
   ngOnInit(): void {
+    if(localStorage.getItem("usuario") != null){
+      this.servicio.logueado = true;
+    }
 
   }
 

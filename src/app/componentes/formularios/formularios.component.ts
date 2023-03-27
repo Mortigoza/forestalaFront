@@ -128,11 +128,6 @@ export class FormulariosComponent implements OnInit{
     this.abrirModal2();
 
   }
-
-  // inscripto(): boolean{
-  //   this.estaInscripto = localStorage.getItem("idPlantacionesParticulares") != null;
-  //   return this.estaInscripto;
-  // }
   cerrar() {
     this.modalAbrir2 = document.querySelector(".solicitar");
     this.modal2 = document.querySelector(".modal2");
@@ -140,6 +135,7 @@ export class FormulariosComponent implements OnInit{
     this.modal2.classList.remove('modal--show');
     this.router.navigate(["/formularios"]);
   }
+
 }
 
 

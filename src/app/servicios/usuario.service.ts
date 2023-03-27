@@ -59,14 +59,6 @@ export class UsuarioService {
     return this.httpClient.delete(`http://localhost:8080/usuarios/borrar/${idUsuario}`)
   }
 
-  obtenerDatosUsuario(id_usuario:number){
-    return  this.httpClient.get<Usuario>(`http://localhost:8080/usuarios/update-form${id_usuario}`);
-  }
-
-  actualizarDatosUsuarios(id_usuario: number, usuario : Usuario){
-    return this.httpClient.put<Usuario>(`http://localhost:8080/usuarios/update-form/${id_usuario}`, usuario);
-  }
-
 
 
 

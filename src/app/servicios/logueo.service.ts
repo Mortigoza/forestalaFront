@@ -14,24 +14,9 @@ export class LogueoService {
 
   constructor(private service : UsuarioService, private router : Router) { }
 
-  // get isLoggedIn(): Observable<boolean> {
-  //   return this.loggedIn.asObservable();
-  // }
-  //
-  // login() {
-  //   // Lógica para iniciar sesión
-  //   this.loggedIn.next(true);
-  // }
-  //
-  // logout() {
-  //   // Lógica para cerrar sesión
-  //   this.loggedIn.next(false);
-  // }
-
   invalidos: string;
-  public logueado: boolean;
+  public logueado: boolean = false;
   sesion(userLogin){
-
     this.service.validarUsuario(userLogin).pipe(
       catchError((error: HttpErrorResponse) => {
     if (error.status === 404) {
