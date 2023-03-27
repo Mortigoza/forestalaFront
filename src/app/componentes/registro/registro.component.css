@@ -1,0 +1,187 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.cuerpo {
+  height: 600px;
+  background-image: url("../../../assets/img/fondoIndex.jpg");
+  background-size: cover;
+}
+
+.contenedor2 {
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 19px 20px 8px -9px rgba(0,0,0,0.2);
+  overflow: hidden;
+  width: 900px;
+  height: 540px;
+  display: inline-block;
+  margin-left: 300px;
+  margin-top: 30px;
+}
+
+.inputs {
+  display:flex;
+  justify-content: space-around;
+}
+
+.primeraParte, .segundaParte{
+  width: 300px;
+  height: 385px;
+}
+
+.cabecera {
+  background-color: #E51E79;
+  color: whitesmoke;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 40px;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 25px;
+}
+
+#formulario {
+  padding: 30px 20px;
+  display: block;
+
+}
+
+.form-control {
+  margin-bottom: 7px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.form-controlPass{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+i {
+  color: #f61083;
+}
+
+.material-icons{
+  transform: translateY(3px);
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+#pass {
+  outline: none;
+  position: absolute;
+  padding-left: .5rem;
+}
+
+/*.ojoPass {*/
+/*  transform: translateX(850%) ;*/
+/*  height: 60%;*/
+/*  top:50%;*/
+/*  right: 8px;*/
+/*}*/
+
+/*.botonOjo{*/
+/*  width: 200px;*/
+/*}*/
+
+
+.form-control #email{
+  height: 40px;
+  margin-top: 0px;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 3px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.form-control input {
+  border: none;
+  background-color: #f0f0f0;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-controlPass input {
+  border: none;
+  background-color: #f0f0f0;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control, input:focus {
+  outline: none;
+}
+
+.form-controlPass, input:focus {
+  outline: none;
+}
+
+.form-control.ok input {
+  border: 0.1px solid;
+  border-color: #08ffc8;
+}
+
+.form-control.falla input{
+  border: 0.1px solid;
+  border-color: #fe5f55;
+
+}
+
+.botonReg {
+  background-color: #6016a9;
+  border: 1px solid #6016a9;
+  color: whitesmoke;
+  border-radius: 2px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.botonReg:hover {
+  background-color: rgb(245, 248, 218);
+  color: #6016a9;
+  cursor: pointer;
+}
+
+.form-control p {
+  visibility: hidden;
+  position: absolute;
+  font-size: small;
+  font-weight: 400;
+  text-align: right;
+}
+
+.form-control.falla p {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.alerta{
+  font-size: 10px;
+  color: #da0b0b;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ojoPass{
+  width: 25px;
+}

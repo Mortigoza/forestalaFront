@@ -1,0 +1,68 @@
+
+<!-- *************************** formularios ************************************ -->
+<main class="cuerpoForms">
+  <div class="contenedor">
+    <div class="conFondo">
+      <h1 class="sumemos">¡Sumemos <br>NATIVAS!</h1>
+      <p class="opciones">Llenando este formulario tenés la <br>posibilidad de solicitar una plantación<br> en tu vereda.</p>
+
+      <p> <b class="importante"> ¡IMPORTANTE! </b> <br></p>
+      <p class="explicacion">Sólo tenés que elegir qué tipo de nativa <br>querés
+       y nosotros, de acuerdo con la <br>disponibilidad del momento, ¡te ofrecemos <br>
+      los ejemplares que podemos plantarte!</p>
+
+    </div>
+
+
+    <div class="blog-wrapper">
+      <div class="segundoForm">
+        <div class="card-img">
+          <img src="../../../assets/img/plant.png" width="250" height="220" style="border:0;" allowfullscreen="" loading="lazy">
+        </div>
+        <div class="unidades"><p>¡Podés elegir una unidad de cada uno!</p></div>
+
+        <form (ngSubmit)="solicitar() " class="checkbox-container" id="miFormulario">
+          <div class="checkboxes">
+            <div >
+              <input type="checkbox" name="arboles" id="arboles" [(ngModel)]="arboles" [disabled]="estaInscripto" >
+              <label for="arboles">Árboles</label>
+            </div>
+            <div >
+              <input type="checkbox" name="arbustos" id="arbustos" [(ngModel)]="arbustos" [disabled]="estaInscripto" >
+              <label for="arbustos">Arbustos</label>
+            </div>
+
+            <div >
+              <input type="checkbox" name="enredaderas" id="enredaderas" [(ngModel)]="enredaderas" [disabled]="estaInscripto">
+              <label for="enredaderas">Enredaderas</label>
+            </div>
+          </div>
+
+          <div class="botonSolicitar" >
+            <button type="submit" class="solicitar"  [disabled]="estaInscripto"  [innerText]="estaInscripto ? 'INSCRIPTO' : 'SOLICITAR'"></button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+</main>
+
+
+
+<!-- ****************************** modal ************************************** -->
+
+<section class="modal2">
+  <div class="modalContenedor">
+    <button (click)="cerrar()" class="cerrar">X</button>
+    <img src="assets/img/loof-and-timmy-watering-flower.gif" alt="flor bailando" class="modalImagen">
+    <h2 class="modalTitulo">Estás por solicitar una plantación en tu vereda</h2>
+    <p class="modalParrafo">¿Deseas confirmar?</p>
+    <a class="modalCerrar2" routerLinkActive="active" routerLink="/formularios" (click)="cerrarModal2()">Confirmar</a>
+  </div>
+
+
+</section>
+

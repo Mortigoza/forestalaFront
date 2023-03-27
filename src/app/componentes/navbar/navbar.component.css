@@ -1,0 +1,107 @@
+.nav{
+  background-color: #fde8df;
+  height: 55px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.forestala {
+  font-family: 'Caveat Brush', cursive;
+  font-size: 40px;
+  margin-left: 40px;
+
+}
+
+.forestala span {
+  color: #E1077F  ;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor:pointer;
+}
+
+
+.botonesNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  margin-right: 50px;
+  cursor:pointer;
+}
+
+.cerrarSesion {
+  padding-left:120px;
+
+}
+
+.cerrarSesion:hover{
+  background: none;
+  text-decoration: underline;
+}
+
+#engranaje{
+  width: 25px;
+  padding-left: 20px;
+
+}
+
+
+.perfil:hover{
+  background: none;
+
+}
+
+.botones {
+  width: 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 120px;
+  cursor:pointer;
+}
+
+.aConinfo {
+  display: inline;
+  justify-content: space-between;
+  width: 500px;
+  text-align: center;
+
+}
+
+#floraNativa, #prohibido, #serv{
+  display: inline;
+  margin-right: 25px;
+}
+
+a{
+  text-decoration: none;
+  color: #87297E;
+  padding: 8px;
+}
+
+a:hover {
+  background-color: rgba(183, 160, 180, 0.42);
+}
+
+
+
+#sumate {
+  color: whitesmoke;
+  background-color: #87297E;
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 7%;
+  margin-left: 20px;
+  cursor:pointer;
+}
+
+

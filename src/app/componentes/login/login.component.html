@@ -1,0 +1,51 @@
+<main>
+  <section class="contenedor3">
+    <div class="jardineria">
+      <img src="assets/img/4vI3.gif" alt="planeta tierra" style="width: 150px; border-radius: 50%; height: 150px;">
+    </div>
+
+    <div class="formulario">
+      <form id="formulario" [formGroup] = "formLogin" (ngSubmit)="iniciarSesion()">
+
+        <div class="inputs">
+
+          <div class="primeraParte">
+
+            <!--  ********** input de email *********** -->
+
+            <div class="form-control2">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" formControlName="email">
+              <div *ngIf="formLogin.get('email')?.touched && formLogin.get('email')?.errors?.['required']"
+              class="alerta">*Este es un campo requerido.</div>
+              <div *ngIf="formLogin.get('email')?.touched && formLogin.get('email')?.errors?.['pattern']"
+                   class="alerta">*Debe ingresar un formato de email válido.</div>
+            </div>
+
+            <!--  ********** input de contraseña *********** -->
+            <div class="form-control2">
+              <label for="passwordConOjo2">Contraseña</label>
+              <input type="password" id="passwordConOjo2" formControlName="password">
+              <i><span class="material-icons" (click)="mostrarPass()">visibility</span></i>
+              <div *ngIf="formLogin.get('password')?.touched && formLogin.get('password')?.errors?.['required']"
+                   class="alerta3">*Este es un campo requerido.</div>
+              <div *ngIf="formLogin.get('password')?.touched && formLogin.get('password')?.errors?.['minlength']"
+                   class="alerta2">*La contraseña debe tener al menos 8 caracteres.</div>
+            </div>
+
+            <div *ngIf="service.invalidos">
+              <p id="error" > {{service.invalidos}}</p>
+            </div>
+
+            <!--  ********** botón para iniciar la sesión *********** -->
+            <div>
+              <button id="iniciar" (click)="iniciarSesion()">Iniciar sesión</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+  </section>
+</main>

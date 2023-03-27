@@ -1,0 +1,77 @@
+<main class="cuerpo">
+
+
+  <div class="card">
+    <div class="cabecera">
+      <h2>Actualizar datos</h2>
+    </div>
+    <form id="formulario" (ngSubmit)="actualizar()" [formGroup]="formAct">
+
+      <div class="inputs">
+
+        <div class="primeraParte">
+
+<!--          <div class="form-control">-->
+<!--            <label for="email">Email</label>-->
+<!--            <input type="text" id="email" formControlName="email" >-->
+<!--          </div>-->
+
+          <div class="form-control">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" formControlName="nombre" [(ngModel)]="datosPersona.nombre">
+          </div>
+
+
+
+          <div class="form-control">
+            <label for="calle">Calle</label>
+            <input type="text" id="calle" formControlName="calle" [(ngModel)]="datosPersona.calle">
+          </div>
+
+          <div class="form-control">
+            <label for="localidad">Localidad</label>
+            <input type="text" id="localidad" formControlName="localidad" [(ngModel)]="datosPersona.localidad">
+          </div>
+
+        </div>
+
+        <div class="segundaParte">
+
+<!--          <div class="form-control">-->
+<!--            <label for="contrasenia">Contraseña</label>-->
+<!--            <input type="text" id="contrasenia" formControlName="contrasenia">-->
+<!--          </div>-->
+
+          <div class="form-control">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" formControlName="apellido" [(ngModel)]="datosPersona.apellido">
+          </div>
+
+          <div class="form-control">
+            <label for="altura">Altura</label>
+            <input type="text" id="altura" formControlName="altura" [(ngModel)]="datosPersona.altura">
+          </div>
+
+
+
+
+          <div class="form-control">
+            <label for="telContacto">Telefono de contacto</label>
+            <input type="text" id="telContacto" formControlName="telContacto" [(ngModel)]="datosPersona.telContacto">
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="botones" >
+        <button class="botonAct" type="submit">Actualizar</button><button class="botonBorrar" type="button" (click)="eliminar()">Eliminar cuenta</button>
+      </div>
+
+    </form>
+
+
+  </div>
+
+
+</main>

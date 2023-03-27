@@ -1,0 +1,100 @@
+<main class="cuerpo">
+  <div class="contenedor2">
+    <div class="cabecera">
+      <h2>¡Sumate a la aventura!</h2>
+    </div>
+    <form id="formulario" [formGroup] = "formRegister" (ngSubmit)="registrarse()">
+
+      <div class="inputs">
+
+        <div class="primeraParte">
+
+          <div class="form-control">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" formControlName="email">
+
+            <div *ngIf="formRegister.get('email')?.touched && formRegister.get('email')?.errors?.['required']"
+                 class="alerta">*Este es un campo requerido.</div>
+            <div *ngIf="formRegister.get('email')?.touched && formRegister.get('email')?.errors?.['pattern']"
+                 class="alerta">*Debe ingresar un formato de email válido.</div>
+            <p></p>
+          </div>
+
+          <div class="form-control">
+            <label for="passwordConOjo" class="passLabel">Contraseña</label>
+            <div class="form-controlPass">
+              <input type="password" id="passwordConOjo" formControlName="password">
+              <i><span class="material-icons" (click)="ojito()">visibility</span></i>
+
+            </div>
+            <div *ngIf="formRegister.get('password')?.touched && formRegister.get('password')?.errors?.['required']"
+                 class="alerta">*Este es un campo requerido.</div>
+            <div *ngIf="formRegister.get('password')?.touched && formRegister.get('password')?.errors?.['minlength']"
+                 class="alerta">*La contraseña debe tener al menos 8 caracteres.</div>
+          </div>
+
+
+          <div class="form-control">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" formControlName="nombre">
+            <div *ngIf="formRegister.get('nombre')?.touched && formRegister.get('nombre')?.errors?.['required']"
+                 class="alerta">*Este es un campo requerido.</div>
+            <p></p>
+          </div>
+
+          <div class="form-control">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" formControlName="apellido">
+            <div *ngIf="formRegister.get('apellido')?.touched && formRegister.get('apellido')?.errors?.['required']"
+                 class="alerta">*Este es un campo requerido.</div>
+            <p></p>
+          </div>
+
+        </div>
+
+        <div class="segundaParte">
+          <div class="form-control">
+            <label for="calle">Calle</label>
+            <input type="text" id="calle" formControlName="calle">
+            <div *ngIf="formRegister.get('calle')?.touched && formRegister.get('calle')?.errors?.['required']"
+                 class="alerta">*Este es un campo requerido.</div>
+
+            <p></p>
+          </div>
+
+          <div class="form-control">
+            <label for="altura">Altura</label>
+            <input type="text" id="altura" formControlName="altura">
+            <div *ngIf="formRegister.get('altura')?.touched && formRegister.get('altura')?.errors?.['required']"
+                 class="alerta">*Este es un campo requerido.</div>
+            <p></p>
+          </div>
+
+          <div class="form-control">
+            <label for="localidad">Localidad</label>
+            <input type="text" id="localidad" formControlName="localidad">
+            <div *ngIf="formRegister.get('localidad')?.touched && formRegister.get('localidad')?.errors?.['required']"
+                 class="alerta">*Este es un campo requerido.</div>
+            <p></p>
+          </div>
+
+          <div class="form-control">
+            <label for="telContacto">Telefono de contacto</label>
+            <input type="text" id="telContacto" formControlName="telContacto">
+            <div *ngIf="formRegister.get('telContacto')?.touched && formRegister.get('telContacto')?.errors?.['required']"
+                 class="alerta">*Este es un campo requerido.</div>
+            <p></p>
+          </div>
+
+        </div>
+      </div>
+
+      <div >
+        <button class="botonReg" type="submit">Registrarme</button>
+      </div>
+
+    </form>
+
+
+  </div>
+</main>

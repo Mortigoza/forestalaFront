@@ -1,0 +1,39 @@
+.footer{
+  width: 100%;
+  height: 65px;
+  background-color: #fde8df;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .logo{
+  display:block;
+}
+
+.redes #insta, .redes #face, .redes #yt{
+  width: 30px;
+  height: 30px;
+  margin-right: 25px;
+
+}
+
+.redes {
+  display: block;
+}
+
+.redes a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.forestala {
+  font-family: 'Caveat Brush', cursive;
+  font-size: 40px;
+  margin-left: 40px;
+
+}
+
+.forestala span {
+  color: #E1077F  ;
+}

@@ -1,0 +1,156 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.control.falla input{
+  border: 0.1px solid;
+  border-color: rgb(253, 19, 19);
+}
+
+.controlForm, input:focus{
+  outline: none;
+}
+
+.control.ok input {
+  border: 0.1px solid;
+  border-color: #08ffc8;
+}
+
+.control.ok p{
+  visibility: hidden;
+}
+
+.controlForm p {
+  visibility: hidden;
+  position: absolute;
+  font-size: small;
+  font-weight: 400;
+}
+
+.control.falla p {
+  visibility: visible;
+  color: crimson;
+  font-size: 10px;
+}
+
+.contenedor3{
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 19px 20px 8px -9px rgba(0,0,0,0.2);
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+  display: inline-block;
+  margin-left: 500px;
+  margin-top: 50px;
+}
+
+.inputs {
+  display:flex;
+  justify-content: space-around;
+}
+
+#formulario {
+  padding: 30px 20px;
+  display: block;
+
+}
+
+.alerta2{
+  margin-top: -25px;
+  font-size: 10px;
+  color: #da0b0b;
+  font-family: 'Roboto', sans-serif;
+}
+
+.alerta3{
+  margin-top: -25px;
+  font-size: 10px;
+  color: #da0b0b;
+  font-family: 'Roboto', sans-serif;
+}
+
+.alerta{
+  font-size: 10px;
+  color: #da0b0b;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-control2 {
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control2 #email{
+  height: 42px;
+}
+
+.form-control2 label {
+  display: inline-block;
+  margin-bottom: 7px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.form-control2 input {
+  border: none;
+  background-color: #f0f0f0;
+  display: block;
+  font-size: 16px;
+  padding: 12px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+#formulario button {
+  background-color: #6016a9;
+  border: 1px solid #6016a9;
+  color: whitesmoke;
+  border-radius: 2px;
+  width: 320px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+#formulario button:hover {
+  background-color: rgb(245, 248, 218);
+  color: #6016a9;
+  cursor: pointer;
+}
+.jardineria{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-bottom: -20px;
+  margin-top: 50px;
+}
+
+main {
+  height: 600px;
+  background-image: url("../../../assets/img/fondoIndex.jpg");
+  background-size: cover;
+}
+
+i {
+  color: #f61083;
+
+}
+
+.material-icons{
+  transform: translateY(-33px);
+  margin-left: 280px;
+  cursor: pointer;
+}
+
+#error{
+  margin-top: -48px;
+  font-size: 15px;
+  color: #da0b0b;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 30px;
+}
+

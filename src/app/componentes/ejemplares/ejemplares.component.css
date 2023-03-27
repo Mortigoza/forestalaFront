@@ -1,0 +1,159 @@
+#cuerpoEjem{
+  height: 2200px;
+  background-image: none;
+  width: 100%;
+}
+
+.floraNativa{
+  text-align: left;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 50px;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-bottom: 60px;
+}
+
+.floraNativa span {
+  color: #E1077F;
+}
+
+.si{
+  font-family: 'Caveat Brush', cursive;
+  color: #7e1898;
+  font-size: 40px;
+}
+
+.frase{
+  margin-left: 220px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  color: rgb(56, 52, 52);
+  background-color: rgba(102, 102, 102, 0.07);
+  padding: 25px;
+  width: 1000px;
+  box-shadow: 0 15px 30px 1px rgba(79, 79, 79, 0.31);
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.flora{
+  width: 1250px;
+  margin-left: 135px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.lista, .imag {
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.contenedor{
+  display: flex;
+  align-items: center;
+}
+
+
+.flora{
+  margin-bottom: 70px;
+}
+
+.flora .contenedorCarrouselBotones{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.flora .contenedorCarrouselBotones .izq, .flora .contenedorCarrouselBotones .der{
+  position: absolute;
+  border: none;
+  background-color: rgba(0,0,0,0.3);
+  font-size: 30px;
+  height: 50%;
+  top: calc(50% - 25%);
+  line-height: 60px;
+  width: 50px;
+  color: white;
+  cursor: pointer;
+  z-index: 500;
+  transition: 0.2s ease all;
+}
+
+.flora .contenedorCarrouselBotones .izq:hover, .flora .contenedorCarrouselBotones .der:hover{
+  background-color: rgba(0,0,0,0.9);
+}
+
+.flora .contenedorCarrouselBotones .izq{
+  left:0;
+}
+
+.flora .contenedorCarrouselBotones .der{
+  right: 0;
+}
+
+.contenedorCarrouselBotones .contenedorCarrousel{
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.contenedorCarrouselBotones .contenedorCarrousel .carrousel{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.contenedorCarrouselBotones .contenedorCarrousel .carrousel .imagenes{
+  min-width: 20%;
+  transition: 0.3s ease all;
+}
+
+.contenedorCarrouselBotones .contenedorCarrousel .carrousel .imagenes.hover{
+  transform: scale(1.2);
+  transform-origin: center;
+}
+
+.contenedorCarrouselBotones .contenedorCarrousel .carrousel .imagenes img{
+  width: 100%;
+  vertical-align: top;
+  object-fit: cover;
+  height: 100%;
+}
+
+figcaption{
+  display: none;
+  position: absolute;
+  top:0px;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  background-color: rgba(0, 0, 0, 0.549);
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
+
+.imagenes{
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1s ease-in-out;
+}
+
+.imagenes:hover figcaption{
+  display: block;
+}
+
+.separador{
+  width: 1000px;
+  height: 50px;
+  margin-left: 270px;
+  margin-bottom: 50px;
+}
+

@@ -1,0 +1,24 @@
+<section class="nav">
+  <div class="logo">
+    <h2 class="forestala" routerLinkActive="active" routerLink="/index">fores<span>Tala</span></h2>
+    <div class = "aConinfo">
+      <a routerLinkActive="active" routerLink="/ejemplares" id="floraNativa">¿Qué puedo plantar?</a>
+      <a href="#servicios" id="serv">Servicio</a>
+      <a href="#prohibido">Ejemplares prohibidos</a>
+    </div>
+
+  </div>
+
+  <div class="botonesNav">
+
+
+    <div class="botones" *ngIf="!servicio.logueado">
+      <a routerLinkActive="active" routerLink="/login" id="login">Log in</a><button routerLinkActive="active" routerLink="/registro" id="sumate">Sumate</button>
+    </div>
+    <a *ngIf="servicio.logueado" class="cerrarSesion" routerLinkActive="active" routerLink="/index" (click)="desloguear()">Cerrar sesión</a>
+    <a *ngIf="servicio.logueado" class="perfil" routerLinkActive="active" routerLink="/perfil"><img src="assets/img/engranaje.png" alt="engranaje" id="engranaje"></a>
+
+  </div>
+
+
+</section>
